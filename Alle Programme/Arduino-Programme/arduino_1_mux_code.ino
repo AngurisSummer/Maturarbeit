@@ -18,10 +18,10 @@ bool monitoring = false;
 bool hasTriggered = false; 
 
 void selectChannel(int ch) {
-  digitalWrite(S0, bitRead(ch, 2));
-  digitalWrite(S1, bitRead(ch, 3));
-  digitalWrite(S2, bitRead(ch, 4));
-  digitalWrite(S3, bitRead(ch, 5));
+  digitalWrite(S0, bitRead(ch, 0));
+  digitalWrite(S1, bitRead(ch, 1));
+  digitalWrite(S2, bitRead(ch, 2));
+  digitalWrite(S3, bitRead(ch, 3));
   delayMicroseconds(50);
 }
 
